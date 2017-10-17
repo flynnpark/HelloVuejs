@@ -36,6 +36,16 @@
         <input v-model="message">
     </div>
 
+    <div id="app-7" class="">
+        <ol>
+            <!-- todo-item 컴포넌트의 인스턴스 만들기 -->
+            <todo-item
+                v-for="item in groceryList"
+                v-bind:todo="item"
+                v-bind:key="item.id">
+            </todo-item>
+        </ol>
+    </div>
     <script src="./vuejsStudy.js"></script>
 </body>
 
